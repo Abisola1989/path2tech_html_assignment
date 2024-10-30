@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Team Members Webpage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-      <header>
-        <h1>Abisola Sholaja</h1>
-        <p>Enthusiastic learner, passionate about programing, and a dedicated parent</p>
-      </header>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+    <header>
+        <h1>IT Team Members</h1>
+        
+    </header>
+    
+    <section>
+        <h2>Add New Member</h2>
+        <form id="add-member-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
 
-      <h2>Two Truths and 1 Lie</h2>
-      <p>Option 1: I have traveled to more than 10 countries.</p>
-      <p>Option 2: I can speak two different languages.</p>
-      <br>
-      <p>Option 3: I have a pet cat named Bentley.</p>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
 
-      <aside>
-          <p><strong>One of my strenght is:</strong> <strong>Adaptability.</strong></p>
-          <p>My Favorite food is <em>seafood</em>.</p>
-      
-      </aside>
-    </div>
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="role" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Add Member</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Team Members </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rachael</td>
+                    <td>Sholaja</td>
+                    <td>Developer</td>
+                    <td>RSholaja@npower.net</td>
+                </tr>
+                <tr>
+                    <td>Ashley</td>
+                    <td>Banks</td>
+                    <td>Designer</td>
+                    <td>ABanks@npower.net</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>Tester</td>
+                    <td>Jsmith@npower.net</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>NPower © 2024</p>
+    </footer>
 </body>
 </html>
